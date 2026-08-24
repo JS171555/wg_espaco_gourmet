@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WG Espaço Gourmet | Fábrica de Churrasqueiras e Fornos de Pizza</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/loading.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+   <style>
+   </style>
+</head>
+
+<body>
+
+
+   <!-- Tela de carregamento -->
+   <div id="preloader">
+      <div class="spinner"></div>
+   </div>
+   <div id="conteudo">
+
+
+      <!-- Header / Navegação -->
+      <header class="header" id="header">
+         <div class="container header-container">
+            <a href="#" class="logo">
+               <img src="assets/logo/001.svg" alt="WG Espaço Gourmet" class="logo-img">
+            </a>
+            <nav class="nav" id="nav">
+               <ul class="nav-list">
+                  <li><a href="#hero" class="nav-link active">Início</a></li>
+                  <li><a href="#churrasqueiras" class="nav-link">Churrasqueiras</a></li>
+                  <li><a href="#fornos" class="nav-link">Fornos de Pizza</a></li>
+                  <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                  <li><a href="#contato" class="nav-link">Contato</a></li>
+               </ul>
+               <div class="contact-info">
+                  <a href="tel:+5511953760412" class="phone-link">
+
+                  </a>
+               </div>
+            </nav>
+            <button class="hamburger" id="hamburger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+         </div>
+      </header>
+      <!-- Seção Hero com Vídeo -->
+      <section class="hero" id="hero">
+         <div class="video-container">
+            <video autoplay muted loop playsinline id="hero-video">
+               <!-- Vídeo será carregado dinamicamente via JS -->
+            </video>
+            <div class="video-overlay"></div>
+         </div>
+         <div class="hero-content">
+            <h1 class="hero-title">SABOR QUE <span class="highlight">UNGE</span> A ALMA</h1>
+            <p class="hero-subtitle">Churrasqueiras e fornos de pizza artesanais, feitos com paixão para os amantes da
+               boa gastronomia</p>
+            <a href="https://wa.me/5511953760412?text=Olá! Gostaria de fazer um orçamento." target="_blank"
+               class="cta-button">
+               <i class="fab fa-whatsapp"></i> Faça seu orçamento
+            </a>
+         </div>
+         <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+               <div class="wheel"></div>
+            </div>
+         </div>
+      </section>
+      <!-- Seção Churrasqueiras -->
+      <section class="products-section" id="churrasqueiras">
+         <div class="container">
+            <div class="section-header">
+               <h2 class="section-title">Churrasqueiras <span class="highlight">Artísticas</span></h2>
+               <p class="section-subtitle">Modelos exclusivos fabricados com materiais de alta qualidade para garantir
+                  durabilidade e excelência no preparo de alimentos.</p>
+            </div>
+            <div class="products-grid">
+               <!-- Produto 1 -->
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+
+                        <img src="assets/img/001.jpg" alt="Churrasqueira Modelo 1" class="product-image">
+                     </div>
+
+                  </div>
+                  <div class="product-content">
+                     <h3 class="product-title">Modelo 1 – Duplo Nível de Grelhas</h3>
+                     <p class="product-description">Churrasqueira em aço inox com design moderno e estrutura robusta,
+                        equipada com duplo nível de grelhas que proporciona versatilidade no preparo e excelente
+                        desempenho térmico, aliando durabilidade e praticidade no uso diário.</p>
+                     <div class="size-selector">
+                        <h4>Medidas Padrão</h4>
+                        <div class="size-options">
+                           <button class="size-option active" data-size="580×480">580×480</button>
+                           <button class="size-option" data-size="680×480">680×480</button>
+                           <button class="size-option" data-size="780×480">780×480</button>
+                        </div>
+                     </div>
+                     <button class="whatsapp-button" data-product="Churrasqueira Modelo 1">
+                        <i class="fab fa-whatsapp"></i> Pedir Orçamento
+                     </button>
+                  </div>
+               </div>
+               <!-- Produto 2 -->
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+                        <img src="assets/img/002.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+                     </div>
+                  </div>
+
+                  <div class="product-content">
+                     <h3 class="product-title">Modelo 2 – Grelhas Deslizantes</h3>
+                     <p class="product-description">Fabricada em aço inox, esta churrasqueira oferece grelhas
+                        deslizantes, fácil manuseio e ótimo aproveitamento de espaço. Ideal para quem busca resistência,
+                        funcionalidade e acabamento sofisticado.</p>
+                     <div class="size-selector">
+                        <h4>Medidas Padrão</h4>
+                        <div class="size-options">
+                           <button class="size-option active" data-size="580×480">580×480</button>
+                           <button class="size-option" data-size="680×480">680×480</button>
+                           <button class="size-option" data-size="780×480">780×480</button>
+                        </div>
+                     </div>
+                     <button class="whatsapp-button" data-product="Churrasqueira Modelo 2">
+                        <i class="fab fa-whatsapp"></i> Pedir Orçamento
+                     </button>
+                  </div>
+               </div>
+               <!-- Produto 3 -->
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+                        <img src="assets/img/003.jpg" alt="Churrasqueira Modelo 3" class="product-image">
+                     </div>
+                  </div>
+
+                  <div class="product-content">
+                     <h3 class="product-title">Modelo 3 – Sistema Elevatório</h3>
+                     <p class="product-description">Churrasqueira em aço inox com sistema elevatório de grelha,
+                        permitindo ajuste preciso da altura para melhor controle do calor, garantindo eficiência,
+                        segurança e longa durabilidade.</p>
+                     <div class="size-selector">
+                        <h4>Medidas Padrão</h4>
+                        <div class="size-options">
+                           <button class="size-option active" data-size="580×480">580×480</button>
+                           <button class="size-option" data-size="680×480">680×480</button>
+                           <button class="size-option" data-size="780×480">780×480</button>
+                        </div>
+                     </div>
+                     <button class="whatsapp-button" data-product="Churrasqueira Modelo 3">
+                        <i class="fab fa-whatsapp"></i> Pedir Orçamento
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Seção Fornos de Pizza -->
+      <section class="products-section dark-section" id="fornos">
+         <div class="container">
+            <div class="section-header">
+               <h2 class="section-title">Fornos de Pizza <span class="highlight">Artesanais</span></h2>
+               <p class="section-subtitle">Forno de pizza em aço inox, com alto desempenho térmico, aquecimento uniforme
+                  e estrutura robusta, ideal para uso profissional.</p>
+            </div>
+            <div class="products-grid">
+
+
+               <!-- Forno 1 -->
+
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <video src="assets/videos/01.mp4" autoplay loop muted playsinline>
+                        </video>
+                     </div>
+
+                  </div>
+                  <div class="product-content">
+                     <h3 class="product-title">Forno de Pizza Inox com Base Metálica</h3>
+                     <p class="product-description">Produzido em aço inox, este forno oferece uniformidade no assamento
+                        e durabilidade superior. Conta com base metálica reforçada, garantindo estabilidade, praticidade
+                        e acabamento sofisticado para áreas gourmet e cozinhas profissionais.</p>
+                     <div class="size-selector">
+                        <h4>Medidas Padrão</h4>
+                        <div class="size-options">
+                           <button class="size-option active" data-size="Tamano Unico">Tamano Unico</button>
+
+                        </div>
+                     </div>
+                     <button class="whatsapp-button" data-product="Forno de Pizza Modelo 1">
+                        <i class="fab fa-whatsapp"></i> Pedir Orçamento
+                     </button>
+                  </div>
+               </div>
+
+
+
+               <!-- Forno 2 -->
+
+
+
+
+
+               <!-- Forno 3 -->
+
+
+
+
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+      <!-- Seção Galeria de imagens -->
+
+
+      <section class="products-section dark-section" id="fornos">
+         <div class="container">
+            <div class="section-header">
+               <h2 class="section-title">Da Fábrica para a <span class="highlight">Galeria</span></h2>
+               <p class="section-subtitle">Veja fotos reais dos nossos produtos já finalizados</p>
+            </div>
+            <div class="products-grid">
+
+
+               <!-- Imagem 1 -->
+
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/001.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+
+
+                  </div>
+               </div>
+
+               <!-- Imagem 2 -->
+
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/002.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+
+
+                  </div>
+               </div>
+               <!-- Imagem 3 -->
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/003.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Imagem 4 -->
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/004.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Imagem 5 -->
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/005.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- Imagem 6 -->
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/006.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Imagem 7 -->
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/007.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- Imagem 8 -->
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/008.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- Imagem 9 -->
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/galeria/009.jpg" alt="Churrasqueira Modelo 2" class="product-image">
+
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+            </div>
+         </div>
+      </section>
+
+
+      <!-- Seção Feedback -->
+
+
+      <section class="products-section" id="churrasqueiras">
+         <div class="container">
+            <div class="section-header">
+
+               <h2 class="section-title">O Que Nossos <span class="highlight">Clientes</span> Dizem</h2>
+               <p class="section-subtitle">Depoimentos reais de quem confia na nossa fabricação</p>
+            </div>
+            <div class="products-grid">
+
+
+               <!-- Imagem 1 -->
+
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/clientes/001.png" alt="Churrasqueira Modelo 2" class="product-image">
+                     </div>
+
+
+                  </div>
+               </div>
+
+               <!-- Imagem 2 -->
+
+
+
+               <div class="product-card">
+                  <div class="product-image">
+                     <div class="image-placeholder">
+
+                        <img src="assets/clientes/002.png" alt="Churrasqueira Modelo 2" class="product-image">
+                     </div>
+
+
+                  </div>
+               </div>
+
+
+
+            </div>
+         </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Seção Localização -->
+      <section class="location-section" id="localizacao">
+         <div class="container">
+            <div class="section-header">
+               <h2 class="section-title">Nossa <span class="highlight">Localização</span></h2>
+               <p class="section-subtitle">Visite nossa fábrica e veja de perto a qualidade dos nossos produtos.</p>
+            </div>
+            <div class="map-container">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1765201276658!6m8!1m7!1sM5es91BGc7ansY84y0C1cA!2m2!1d-23.62778896757988!2d-46.60799933050517!3f86.47!4f0!5f0.7820865974627469"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer" id="contato">
+         <div class="container">
+            <div class="footer-content">
+               <div class="footer-logo">
+                  <div class="logo-placeholder">
+                     <span class="logo-text">WG Espaço Gourmet</span>
+                  </div>
+                  <p class="footer-description">Fabricamos churrasqueiras e fornos de pizza com excelência, unindo
+                     tradição e qualidade para transformar momentos em experiências gastronômicas inesquecíveis.</p>
+               </div>
+               <div class="footer-contact">
+                  <h3 class="footer-title">Contato</h3>
+                  <ul class="contact-list">
+                     <li>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+5511953760412">(11) 95376-0412</a>
+                     </li>
+                     <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Wellingtonguedes175@gmail.com">Wellingtonguedes175@gmail.com</a>
+                     </li>
+                     <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo, SP</span>
+                     </li>
+                  </ul>
+                  <div class="social-links">
+                     <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="https://wa.me/5511953760412" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="footer-links">
+                  <h3 class="footer-title">Links Rápidos</h3>
+                  <ul class="links-list">
+                     <li><a href="#hero">Início</a></li>
+                     <li><a href="#churrasqueiras">Churrasqueiras</a></li>
+                     <li><a href="#fornos">Fornos de Pizza</a></li>
+                     <li><a href="#localizacao">Localização</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <p>&copy; <span id="current-year"></span> WG Espaço Gourmet. Todos os direitos reservados.</p>
+               <p>Desenvolvido com paixão pela gastronomia.</p>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <!-- Botão flutuante do WhatsApp -->
+   <a href="https://wa.me/5511953760412?text=Olá! Gostaria de fazer um orçamento." target="_blank"
+      class="float-whatsapp">
+      <i class="fab fa-whatsapp"></i>
+   </a>
+   <script src="./js/loading.js" defer></script>
+   <script src="./js/script.js" defer></script>
+</body>
+
+</html>
