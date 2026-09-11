@@ -259,7 +259,6 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     color: #fff;
     padding: 15px 30px;
     font-size: 1.1rem;
@@ -269,9 +268,7 @@ section {
 
     background: transparent;
     border: 2px solid #fff;
-
     transition: all 0.3s ease;
-
     opacity: 0;
     transform: translateY(30px);
 }
@@ -283,12 +280,10 @@ section {
 
 .cta-button:hover {
     background: transparent;
-    border-color: #00FF7F;
-    color: #00FF7F;
-
+    border-color: #ff4d00;
+    color: #ff4d00;
     transform: translateY(-5px);
-
-    box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
+    box-shadow: 0 0 15px rgba(255, 49, 49, 0.6);
 }
 
 .scroll-indicator {
