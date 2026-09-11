@@ -1,4 +1,4 @@
-﻿/* Reset e estilos básicos */
+/* Reset e estilos básicos */
 * {
 	margin: 0;
 	padding: 0;
@@ -256,30 +256,39 @@ section {
 }
 
 .cta-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #25D366;
-	color: #fff;
-	padding: 15px 30px;
-	font-size: 1.1rem;
-	font-weight: 600;
-	text-decoration: none;
-	border-radius: 50px;
-	transition: all 0.3s ease;
-	opacity: 0;
-	transform: translateY(30px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+
+    background: transparent;
+    border: 2px solid #fff;
+
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 .cta-button i {
-	margin-right: 10px;
-	font-size: 1.3rem;
+    margin-right: 10px;
+    font-size: 1.3rem;
 }
 
 .cta-button:hover {
-	background-color: #128C7E;
-	transform: translateY(-5px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border-color: #00FF7F;
+    color: #00FF7F;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
 }
 
 .scroll-indicator {
