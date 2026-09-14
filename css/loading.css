@@ -12,14 +12,17 @@
 	z-index: 9999;
 }
 
-/* Substituindo o spinner animado por um gif */
 .spinner {
-	background: url('../assets/logo/000.svg') no-repeat center center;
-	background-size: contain;
-	width: 150px;
-	/* ajuste o tamanho conforme necessário */
-	height: 150px;
-	/* ajuste o tamanho conforme necessário */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner dotlottie-wc {
+    width: 100%;
+    height: 100%;
 }
 
 /* Efeito de fade-out para sumir suavemente quando necessário */
