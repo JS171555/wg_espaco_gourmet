@@ -6,5 +6,5 @@ window.addEventListener('load', function () {
   // Após a transição, remove o preloader da tela
   setTimeout(function () {
     preloader.style.display = 'none';
-  }, 500);
+  }, 1500);
 });
